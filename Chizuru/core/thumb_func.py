@@ -62,8 +62,8 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                 await f.close()
 
     image = Image.open(f"./background.png")
-    black = Image.open("Chizuru/core/resources/black.jpg")
-    img = Image.open("Chizuru/core/resources/music.png")
+    black = Image.open("tp.sam/core/resources/black.jpg")
+    img = Image.open("tp.sam/core/resources/music.png")
     image5 = changeImageSize(1280, 720, img)
     image1 = changeImageSize(1280, 720, image)
     image1 = image1.filter(ImageFilter.BoxBlur(10))
@@ -100,13 +100,13 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     image2.paste(image5, (0,0), mask = image5)
 
     
-    font1 = ImageFont.truetype(r'Chizuru/core/resources/robot.otf', 30)
-    font2 = ImageFont.truetype(r'Chizuru/core/resources/robot.otf', 60)
-    font3 = ImageFont.truetype(r'Chizuru/core/resources/robot.otf', 49)
-    font4 = ImageFont.truetype(r'Chizuru/core/resources/chizuru.ttf', 35)
+    font1 = ImageFont.truetype(r'tp.sam/core/resources/robot.otf', 30)
+    font2 = ImageFont.truetype(r'tp.sam/core/resources/robot.otf', 60)
+    font3 = ImageFont.truetype(r'tp.sam/core/resources/robot.otf', 49)
+    font4 = ImageFont.truetype(r'tp.sam/core/resources/chizuru.ttf', 35)
 
     image4 = ImageDraw.Draw(image2)
-    image4.text((10, 10), "CHIZURU MUSIC", fill="white", font = font1, align ="left") 
+    image4.text((10, 10), "ᴛᴘ.sᴀᴍ", fill="white", font = font1, align ="left") 
     image4.text((670, 150), "NOW PLAYING", fill="white", font = font2, stroke_width=2, stroke_fill="white", align ="left") 
 
     
