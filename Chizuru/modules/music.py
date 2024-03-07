@@ -27,10 +27,10 @@ keyboard = InlineKeyboardMarkup([
 ])
 
 local_thumb = [
-"https://graph.org/file/e3fa9ab16ebefbfdd29d9.jpg",
-"https://graph.org/file/5938774f48c1f019c73f7.jpg",
-"https://graph.org/file/b13a16734bab174f58482.jpg",
-"https://graph.org/file/2deb4e5cbba862f2d5457.jpg",
+"https://te.legra.ph/file/96773cc6d6b818a1942b3.jpg",
+"https://te.legra.ph/file/96773cc6d6b818a1942b3.jpg",
+"https://te.legra.ph/file/96773cc6d6b818a1942b3.jpg",
+"https://te.legra.ph/file/96773cc6d6b818a1942b3.jpg",
 ]
 
 
@@ -48,7 +48,7 @@ async def play(_, message):
     global useer    
     chat_id = message.chat.id  
     user_name = message.from_user.mention                
-    msg = await message.reply("**🔎 sᴇᴀʀᴄʜɪɴɢ...**") 
+    msg = await message.reply("🕊️") 
     try:
         user = await userbot.get_me()
         await _.get_chat_member(chat_id, user.id)
@@ -160,7 +160,7 @@ async def vplay(_, message):
     global useer    
     chat_id = message.chat.id  
     user_name = message.from_user.mention                
-    msg = await message.reply("**🔎 sᴇᴀʀᴄʜɪɴɢ...**") 
+    msg = await message.reply("🕊️") 
     try:
         user = await userbot.get_me()
         await _.get_chat_member(chat_id, user.id)
